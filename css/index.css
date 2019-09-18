@@ -1,0 +1,269 @@
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.nav-menu {
+    position: absolute;
+    width: 220px;
+    height: 480px;
+    background-color: rgba(51, 51, 51, .6);
+
+}
+
+.nav-menu dt {
+    width: 220px;
+    height: 80px;
+    padding: 8px 10px;
+}
+
+.nav-menu dl.active dt {
+    background-color: rgba(51, 51, 51, .5);
+}
+
+.icon {
+    background: url("../images/icon.png") no-repeat;
+}
+
+.nav-menu dt p {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.nav-menu dt p a {
+    float: left;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav-menu dt p a:hover {
+    text-decoration: underline;
+}
+
+.nav-menu dt p i {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.nav-menu dt p i.icon1 {
+    background-position: -32px -36px;
+}
+
+.nav-menu dt p i.icon2 {
+    background-position: -154px -18px;
+}
+
+.nav-menu dt p i.icon3 {
+    background-position: -98px -36px;
+}
+
+.nav-menu dt p i.icon4 {
+    background-position: -65px -36px;
+}
+
+.nav-menu dt p i.icon5 {
+    background-position: -48px -36px;
+}
+
+.nav-menu dt p i.icon6 {
+    background-position: -114px -21px;
+}
+
+.nav-menu dt p span {
+    font-family: SimSun;
+    float: right;
+    font-size: 12px;
+    font-weight: border;
+}
+
+.nav-menu .hot {
+    display: block;
+    height: 44px;
+    line-height: 22px;
+    padding-left: 24px;
+    overflow: hidden;
+}
+
+.nav-menu .hot a {
+    float: left;
+    color: #fff;
+    opacity: .7;
+    margin-right: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.nav-menu .active .hot a {
+    color: #ccc;
+}
+
+.nav-menu .hot a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-menu dd {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 220px;
+    width: 760px;
+    min-height: 468px;
+    max-height: 480px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    overflow: hidden;
+}
+
+.nav-menu .active dd {
+    display: block;
+}
+
+.nav-menu .left {
+    width: 530px;
+    padding: 10px;
+}
+
+.nav-menu .item {
+    padding: 0 0 10px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.nav-menu .item h4 {
+    float: left;
+    width: 70px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c80f1e;
+}
+
+.nav-menu .item p {
+    margin-left: 70px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.nav-menu .item a {
+    float: left;
+    margin-right: 5px;
+    white-space: nowrap;
+    color: #333;
+    font-size: 12px;
+}
+
+.nav-menu .item a::after {
+    display: inline-block;
+    content: "|";
+    margin-left: 7px;
+    color: #cfcfcf;
+}
+
+.nav-menu .item a:last-of-type::after {
+    content: "";
+    margin-left: 7px;
+}
+
+.nav-menu .item a:hover {
+    color: #c80f1e;
+}
+
+.nav-menu .right {
+    width: 220px;
+    height: 480px;
+    padding: 10px;
+}
+
+.nav-menu .right a {
+    display: block;
+}
+
+.nav-menu .right a:last-of-type {
+    border-top: 1px dotted #ccc;
+}
+
+
+/* 轮播图 */
+.banner {
+    position: relative;
+    width: 760px;
+    height: 480px;
+    margin-left: 220px;
+}
+
+.banner-img li {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.banner-img li.active {
+    opacity: 1;
+}
+
+.banner-btns {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -60px;
+    height: 25px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+.banner-btns li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.banner-btns li.active {
+    background-color: #eee;
+}
+
+.banner .banner-left,
+.banner .banner-right {
+    position: absolute;
+    margin: 10px;
+    top: 50%;
+    margin-top: -35px;
+    display: none;
+    width: 40px;
+    height: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.banner.hover .banner-left,
+.banner.hover .banner-right {
+    display: block;
+}
+
+.banner .banner-left {
+    left: 0;
+    background: rgba(0, 0, 0, .2) url("../images/arrow_left.png") no-repeat center;
+    background-size: 40px;
+}
+
+.banner .banner-right {
+    right: 0;
+    background: rgba(0, 0, 0, .2) url("../images/arrow_right.png") no-repeat center;
+    background-size: 40px;
+}

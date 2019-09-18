@@ -1,0 +1,269 @@
+body {
+    background-color: #eee;
+}
+
+.floor-container {
+    position: relative;
+}
+
+.floor-container .title {
+    margin: 20px auto;
+}
+
+.floor {
+    margin-bottom: 20px;
+}
+
+.floor-main {
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* 广告左侧部分 */
+.floor-main .leftAD {
+    width: 190px;
+}
+
+
+
+.leftAD .leftAD-top {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.AD-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px;
+    line-height: 18px;
+    color: #6b6b6b;
+}
+
+.AD-info h3 {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: normal;
+}
+
+.AD-info p {
+    color: #555;
+    font-size: 12px;
+}
+
+.AD-info .price {
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.leftAD-top img {
+    width: 190px;
+    height: 290px;
+    transition: transform 0.5s linear;
+}
+
+.leftAD .leftAD-top:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+.leftAD .hot-rank {
+    position: relative;
+    height: 150px;
+    background-color: #734e8b;
+    text-align: center;
+    color: #fff;
+}
+
+.leftAD .hot-rank:before {
+    position: absolute;
+    content: "";
+    border-top: 6px solid #444;
+    border-left: 10px solid transparent;
+    left: -10px;
+}
+
+.hot-rank .leftAD-bottom {
+    position: absolute;
+    display: block;
+    top: -34px;
+    left: -10px;
+    width: 200px;
+    text-align: left;
+    line-height: 34px;
+    background-color: #734e8b;
+    color: #fff;
+    opacity: 0.7;
+    padding: 0 10px 0 20px;
+    font-size: 12px;
+}
+
+.hot-rank .leftAD-bottom:hover {
+    text-decoration: underline;
+}
+
+.leftAD-bottom i {
+    float: right;
+}
+
+.hot-rank dl {
+    padding: 30px 20px;
+}
+
+.hot-rank dl dt {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.hot-rank dl span {
+    display: inline-block;
+    width: 70px;
+    line-height: 20px;
+}
+
+.hot-rank dl a {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+}
+
+.hot-rank dl a:hover {
+    text-decoration: underline;
+}
+
+
+/* 广告中间部分 */
+.floor-main .centerAD {
+    width: 780px;
+    height: 440px;
+    margin-left: 10px;
+}
+
+.centerAD li {
+    float: left;
+}
+
+.centerAD a {
+    position: relative;
+    display: block;
+    width: 195px;
+    height: 220px;
+    border-right: 1px dashed #d6d6d6;
+    border-bottom: 1px dashed #d6d6d6;
+}
+
+.centerAD li:nth-of-type(n+4) a {
+    border-bottom: none;
+}
+
+.centerAD a:hover img {
+    transform: translateX(-10px);
+}
+
+
+.centerAD img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s linear;
+}
+
+
+/* 广告右侧区域 */
+.floor-main .rightAD {
+    width: 200px;
+}
+
+.rightAD a {
+    display: block;
+    height: 110px;
+    position: relative;
+}
+
+.rightAD a:hover img {
+    transform: translateX(-10px);
+}
+
+.rightAD img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s linear;
+}
+
+
+/* 广告底部区域 */
+.floor-footer {
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+}
+
+.floor-footer .footer-bg {
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    opacity: .3;
+    z-index: -1;
+}
+
+.floor-footer .footer-content {
+    padding: 0 15px;
+}
+
+.footer-content span {
+    float: left;
+    margin-right: 20px;
+}
+
+.floor-footer a {
+    float: left;
+    font-size: 14px;
+    margin: 16px 0 0 15px;
+    line-height: 16px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.floor-footer a:last-of-type {
+    border-right: none;
+}
+
+.floor-footer a:hover {
+    text-decoration: underline;
+}
+
+
+#tab {
+    position: fixed;
+    z-index: 100;
+    top: 40px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#tab li {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 1px;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+#tab li.active,
+#tab li:hover {
+    background-color: #333;
+}

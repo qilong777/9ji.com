@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>9机网选项卡</title>
+    <link rel="stylesheet" href="css/base_px.css">
+    <link rel="stylesheet" href="css/floor.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+</head>
+
+<body>
+    <script>
+        (new NavTab(data));
+        (new Banner(bannerData));
+        (new FloorShow()).init(floorData);
+        (new Tab()).init(floorData);
+    </script>
+</body>
+
+</html>
